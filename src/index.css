@@ -1,0 +1,129 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-outfit: 'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+:root {
+  font-family: var(--font-sans);
+}
+
+/* Modern & Elegant Font utility classes */
+.font-theme-jakarta {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif !important;
+}
+
+.font-theme-outfit {
+  font-family: 'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif !important;
+}
+
+.font-theme-mono {
+  font-family: 'JetBrains Mono', monospace !important;
+}
+
+/* Backward compatibility font aliases */
+.font-theme-modern {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif !important;
+}
+
+.font-theme-lego {
+  font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif !important;
+}
+
+.font-theme-tech {
+  font-family: 'JetBrains Mono', monospace !important;
+}
+
+/* Modern Minimalist Surface & Card Utilities */
+.modern-surface {
+  transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modern-surface:hover {
+  border-color: rgba(16, 185, 129, 0.4);
+}
+
+.modern-btn {
+  transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modern-btn:hover {
+  transform: translateY(-1px);
+}
+
+.modern-btn:active {
+  transform: translateY(0px);
+}
+
+
+.lego-btn-brick:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.26);
+}
+
+.lego-btn-brick:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.22);
+}
+
+/* Hard Pop Retro Brick button */
+.lego-btn-retro {
+  border: 2px solid currentColor;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.8);
+  transition: all 0.12s ease;
+}
+
+.lego-btn-retro:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.85);
+}
+
+.lego-btn-retro:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.8);
+}
+
+/* Decorative Lego Top Studs Row */
+.lego-brick-stud-row {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.lego-stud-pill {
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  background: currentColor;
+  opacity: 0.35;
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.25), 0 2px 0 rgba(255, 255, 255, 0.3);
+}
+
+.lego-card-studs {
+  position: relative;
+}
+
+
+/* Custom subtle scrollbars for code and prompt views */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.2);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.4);
+}
+

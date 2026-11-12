@@ -1,0 +1,6 @@
+{
+  "name": "Klick Assets Generator",
+  "description": "AI Tool Builder yang mengubah ide bahasa alami menjadi Master Prompt implementatif untuk Google AI Studio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
